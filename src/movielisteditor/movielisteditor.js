@@ -143,7 +143,7 @@ const MovieListEditor = () => {
   }
 
   return(
-    <>
+    <section>
       <h1>Daftar Film</h1>
       <table>
         <thead>
@@ -186,7 +186,7 @@ const MovieListEditor = () => {
       <h1>Movie Form</h1>
 
       <div style={{width: "50%", margin: "0 auto", display: "block"}}>
-        <div style={{border: "1px solid #aaa", padding: "20px"}}>
+        <div style={{border: "1px solid #aaa", padding: "20px",backgroundColor:"white"}}>
           <form onSubmit={handleSubmit}>
             <label style={{float: "left"}}>
               Title:
@@ -203,7 +203,7 @@ const MovieListEditor = () => {
             <label style={{float: "left"}}>
               Year:
             </label>
-            <input style={{float: "right"}} type="number" required year="year" value={input.year} onChange={handleChange}/>
+            <input style={{float: "right"}} type="number"  required year="year" value={input.year} onChange={handleChange}/>
             <br/>
             <br/>
             <label style={{float: "left"}}>
@@ -236,7 +236,7 @@ const MovieListEditor = () => {
           </form>
         </div>
       </div>
-    </>
+    </section>
   )
 }
 

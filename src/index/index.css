@@ -3,19 +3,27 @@ body{
     margin: 0px;
     background-image: url("../public/img/pattern.jpg");
 }
-header {
-    background-color: white;
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    padding: 5px;
-    position: fixed;
-    top: 0px;
-    right: 0px;
-    left: 0px;
-    z-index: 1;
-}
-
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:white;
+    float: right;
+  }
+  
+  
+  li a {
+    display: block;
+    color:black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color:whitesmoke;
+  }
 nav li {
     list-style: none;
     display: inline-block;
@@ -46,4 +54,18 @@ article {
 
 h5 {
     text-align: center;
+}
+
+footer {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  background-color: black;
+  color: white;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
 }

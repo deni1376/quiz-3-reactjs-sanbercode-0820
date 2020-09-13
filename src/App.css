@@ -36,3 +36,35 @@
     transform: rotate(360deg);
   }
 }
+
+body{
+  font-family: 'Slabo 27px', serif;
+  margin: 0px;
+  background-image: url("./public/img/pattern.jpg");
+}
+header {
+  background-color: white;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+footer {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  background-color: black;
+  color: white;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
