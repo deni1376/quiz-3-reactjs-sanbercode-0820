@@ -4,7 +4,7 @@ import "./movielisteditor.css"
 
 const MovieListEditor = () => {  
   const [daftarMovies, setDaftarMovies] =  useState(null)
-  const [input, setInput]  =  useState({title: "", description: "", year:0,duration:0,genre:"",rating:0,image:"", id: null})
+  const [input, setInput]  =  useState({title: "", description: "", year:2020,duration:120,genre:"",rating:0,image:"", id: null})
 
   useEffect( () => {
     if (daftarMovies === null){
@@ -159,7 +159,6 @@ const MovieListEditor = () => {
           </tr>
         </thead>
         <tbody>
-
             {
               daftarMovies !== null && daftarMovies.map((item, index)=>{
                 return(                    

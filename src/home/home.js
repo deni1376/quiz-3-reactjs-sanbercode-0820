@@ -72,7 +72,7 @@ const Home = () => {
     let duration = input.duration.toString()
     let genre= input.genre
     let rating = input.rating.toString()
-    let image= input.image.urlToImage
+    let image= input.image.urlToImage()
     
 
     if (input.id === null){        

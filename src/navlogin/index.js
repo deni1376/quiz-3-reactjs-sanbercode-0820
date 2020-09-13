@@ -13,6 +13,7 @@ import MovieList from '../movielisteditor/movielisteditor';
 import Logout from '../logout/logout'
 import logo from '../public/img/logo.png'
 
+
 export default function App() {
   return (
     <Router>

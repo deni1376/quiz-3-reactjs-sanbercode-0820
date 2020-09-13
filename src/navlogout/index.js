@@ -1,4 +1,5 @@
 import React from "react";
+import "./index.css"
 import {
   BrowserRouter as Router,
   Switch,
@@ -6,36 +7,32 @@ import {
   Link
 } from "react-router-dom";
 
-import Index from "./index/index
+import Home from "../home/home"
+import About from '../about/about'
+import Login from '../login/login'
 import logo from '../public/img/logo.png'
-/* import PropsBuah from '../Tugas-10/tugas10'
-import Timer from '../Tugas-11/timer';
-import Lists from '../Tugas-12/listForm';
-import HooksApi from '../Tugas-13/hooksApi';
-import Context from '../Tugas-14/DaftarBuah';
-import ChangeTheme from './changetheme'; */
+
 
 export default function App() {
   return (
     <Router>
       <div>
+      <header>
+      <img id="logo" src={logo} width="200px" />
         <nav>
           <ul>
-            <li>
+          <li>
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/Tugas-10">About</Link>
+              <Link to="about">About</Link>
             </li>
             <li>
-              <Link to="/Tugas-11">Movie List Editor</Link>
-            </li>
-            <li>
-              <Link to="/Tugas-12">Login</Link>
+              <Link to="login">Login</Link>
             </li>
           </ul>
         </nav>
-
+        </header>
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
@@ -43,19 +40,23 @@ export default function App() {
           <Route exact path="/" component={Home}/>
           
           {/* contoh dengan tag dengan end tag */}
-          <Route path="/Tugas-10">
-            <PropsBuah/>
+          <Route path="/about">
+            <About/>
           </Route>
-          <Route path="/Tugas-11">
-            <Timer/>
+          <Route path="/login">
+            <Login/>
           </Route>
 
 
-          <Route exact path="/Tugas-12" component={Lists}/>
+
+          {/* <Route exact path="/Tugas-12" component={Lists}/>
           <Route exact path="/Tugas-13" component={HooksApi}/>
           <Route exact path="/Tugas-14" component={Context}/>
-          <Route exact path="/Tugas-15" component={ChangeTheme}/> 
+          <Route exact path="/Tugas-15" component={ChangeTheme}/> */} 
         </Switch>
+        <footer>
+      <h5>copyright &copy; 2020 by Sanbercode</h5>
+      </footer>
       </div>
     </Router>
   );
